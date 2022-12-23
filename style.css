@@ -1,0 +1,288 @@
+
+/* Estilo pagina desktop */
+
+body{
+    background-color: #E5E5E5;;
+}
+.icon{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 2%;
+}
+
+.icon img{
+    width: 100%;
+}
+
+.cajaTexto-textarea::placeholder{
+    color: #0A3871;
+}
+
+.cajaTexto{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 40%;
+    height: 60%;
+}
+
+.cajaTexto-textarea{
+    resize: none;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #0A3871;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3em;
+    width: 100%;
+    height: 100%;
+}
+
+.resultado{
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    border-radius: 25px;
+    width: 33%;
+    height: 90%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    right: 3%;
+    top: 3%;
+}
+
+.resultado-vacio-contenido{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.resultado-vacio-texto{
+    margin: 0.5em;
+    font-family: 'Inter', sans-serif;
+}
+
+.resultado-vacio-contenido-imagen{
+    width: 90%;
+}
+
+.resultado-vacio-texto-negritas{
+    font-weight: bold;
+}
+
+.resultado-lleno-contenido{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resultado-lleno-contenido textarea{
+    resize: none;
+    background-color:rgba(1, 1,1, 0);
+    border: none;
+    color: #0A3871;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    margin: 5% 0;
+    width: 90%;
+    height: 70%;
+    font-size: 1.3em;
+}
+
+.resultado-lleno-contenido button{
+    height: 2.5em;
+    width: 80%;
+    border-radius: 32px;
+    border-width: 0.5px;
+    border-color: #0A3871;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    transition: 0.5s;
+    margin: 3em 0;
+}
+
+.resultado-lleno-contenido button:hover{
+    background-color: white;
+    box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+.botones{
+    position: absolute;
+    display: inline-block;
+    bottom: 7%;
+    left: 10%;
+    width: 45%;
+}
+.botones p{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7em;
+    margin: 0 2% 2% 0;
+    color: #0A3871;
+}
+
+.botones p::before{
+    content: "ⓘ ";
+}
+
+.botones button{
+    height: 3em;
+    width: 48%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.botones button:hover{
+    opacity: 0.7;
+    box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.botones #botones-encriptar{
+    background-color: #0A3871;
+    color: white;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+}
+
+.botones #botones-desencriptar{
+    border-width: 0.5px;
+    border-color: #0A3871;
+    color: #0A3871;
+    background-color: rgba(0,0,0,0)
+}
+
+.rodapie{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 2.5%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 50%;
+    background-color: #0A3871;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodapie a{
+    color: white;
+    transition: 0.5s all;
+    text-decoration: underline;
+}
+.rodapie a:hover{
+    color: darkgoldenrod;
+}
+
+/* Estilo para celular */
+
+@media screen and (max-width: 480px) {
+    
+    .icon{
+        width: 5%;
+    }
+    
+    .cajaTexto{
+        width: 80%;
+        height: 40%;
+    }    
+
+    .botones{
+        bottom: 35%;
+        left: 7.5%;
+        width: 85%;
+        height: 15%;
+    }
+
+    .botones button{
+        margin: 2% 0;;
+    }
+
+    #botones-encriptar{
+        width: 100%;
+        height: 40%;
+    }
+
+    #botones-desencriptar{
+        width: 100%;
+        height: 40%;
+    }
+    
+    .resultado{
+        right: auto;
+        top: auto;
+        height: 20%;
+        bottom: 5%;
+        width: 90%;
+        left: 5%;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);;
+    }
+
+    .resultado-vacio-contenido-imagen{
+        display: none;
+    }
+
+    .resultado-lleno-contenido button{
+        margin: 2% 0;
+    }
+}
+/* Estilo para tabletas */
+
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+    
+    .icon{
+        width: 3.5%;
+    }
+    
+    .cajaTexto{
+        width: 80%;
+        height: 40%;
+        font-size: 1.5em;
+    }    
+
+    .botones{
+        bottom: 30%;
+        left: 7.5%;
+        width: 85%;
+        height: 15%;
+    }
+
+    .botones button{
+        margin: 2% 0;;
+    }
+    
+    .resultado{
+        right: auto;
+        top: auto;
+        height: 27%;
+        bottom: 5%;
+        width: 90%;
+        left: 5%;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    }
+
+    .resultado-vacio-texto{
+        font-size: 2em;
+    }
+    
+    .resultado-vacio-contenido-imagen{
+        display: none;
+    }
+
+    .resultado-lleno-contenido button{
+        margin: 2% 0;
+    }
+}

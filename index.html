@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Challenge 1: Encriptador</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <!-- Div para el icono de alura -->
+        <div class="icon">
+            <img src="./images/Icon.png">
+        </div>
+        <!-- Caja para el texto que se va a encriptar/desencriptar -->
+        <div class="cajaTexto">
+            <textarea class="cajaTexto-textarea" id="cajaTexto-textarea" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <!-- Div para los botones de encriptar/desencriptar -->
+        <div class="botones">
+            <p>Solo letras minúsculas y sin acentos</p> 
+            <button id="botones-encriptar">Encriptar</button>
+            <button id="botones-desencriptar">Desencriptar</button>
+        </div>
+        <!-- Div para mostrar el texto desencriptado -->
+        <div class="resultado">
+            <!-- Div para cuando no se ha encriptado/desencriptado nada -->
+            <div class="resultado-vacio">
+                <div class="resultado-vacio-contenido"id='resultado-vacio-contenido'>
+
+                    <img src="./images/Muñeco.png" class="resultado-vacio-contenido-imagen">
+                    <p class="resultado-vacio-texto"><strong class="resultado-vacio-texto-negritas">Ningún mensaje fue encontrado</strong></p>
+                    <p class="resultado-vacio-texto">Ingresa el texto que desea encriptar o desencriptar</p>
+
+                </div>
+            </div>
+            <!-- Div para cuando se ha encriptado/desencriptado algo -->
+            <div class="resultado-lleno">
+                <div class="resultado-lleno-contenido" id="resultado-lleno-contenido">
+                    <textarea id="resultado-texto" readonly></textarea>
+                    <button id="copiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Div para el rodapie de quien desarrollo el sitio -->
+        <div class="rodapie">
+            <p>Designed by <a href="https://www.linkedin.com/in/luis-cerezo-garcia/">Luis Cerezo</a></p>
+            <script src="./script.js"></script>
+        </div>
+    </body>
+</html>
